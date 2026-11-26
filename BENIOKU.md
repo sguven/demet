@@ -2,6 +2,8 @@
 
 İçerik eklemek için yönetim paneli: https://sguven.github.io/demet/admin/
 
+Tek tıkla giriş bağlantısı: `https://sguven.github.io/demet/admin/#key=ANAHTAR` (anahtar cihaza kaydedilir, adres çubuğundan silinir).
+
 Sekmeler: Gezdiğim Yerler, Yemeklerim, Eserlerim, Ben.
 
 ## İçerik nasıl doldurulur

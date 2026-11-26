@@ -5,6 +5,14 @@
   var ANAHTAR_KEY = "demet-panel-anahtar";
   var anahtar = "";
   try { anahtar = localStorage.getItem(ANAHTAR_KEY) || ""; } catch (e) {}
+  // Tek tıkla giriş: admin/#key=ANAHTAR bağlantısı. Anahtar cihaza kaydedilir ve adres çubuğundan hemen silinir.
+  (function () {
+    var m = location.hash.match(/[#&](?:key|anahtar)=([^&]+)/);
+    if (!m) return;
+    anahtar = decodeURIComponent(m[1]).trim();
+    try { localStorage.setItem(ANAHTAR_KEY, anahtar); } catch (e) {}
+    history.replaceState(null, "", location.pathname + location.search + "#gezilerim");
+  })();
   $("siteye").href = A.site;
 
   function esc(s) {
