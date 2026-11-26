@@ -194,7 +194,12 @@
       "tarih": "",
       "ozet": "",
       "aciklama": "",
-      "fotograflar": [],
+      "fotograflar": [
+        {
+          "src": "img/samsun-mwxcpzi528c.jpg",
+          "aciklama": ""
+        }
+      ],
       "etiketler": []
     },
     {
